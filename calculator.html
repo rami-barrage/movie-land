@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="calculator.svg.png">
+    <style>
+
+    </style>
+</head>
+<body onkeydown="keyev(event.key, event)" >
+    <table class="calculator">
+        <tr>
+            <th colspan="4">
+                <div>
+                    <div type="text" class="display" id="display"></div>
+                    <div class="display" id="result"></div>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn operator" onclick="clearDisplay()">C</button></td>
+            <td>
+                <button class="btn operator /" onclick="append('/')">/</button></td>
+            <td>
+                <button class="btn operator *" onclick="append('*')">*</button></td>
+            <td>
+                <button class="btn operator" onclick="backspace()" ondblclick="clearDisplay()">←</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn 7" onclick="append('7')">7</button>
+            </td>
+            <td>
+                <button class="btn 8" onclick="append('8')">8</button>
+            </td>
+            <td>
+                <button class="btn 9" onclick="append('9')">9</button>
+            </td>
+            <td>
+                <button class="btn - operator" onclick="append('-')">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn 4" onclick="append('4')">4</button>
+                
+            </td>
+            <td>
+                <button class="btn 5" onclick="append('5')">5</button>
+
+            </td>
+            <td>
+                <button class="btn 6" onclick="append('6')">6</button>
+
+            </td>
+            <td>
+                <button class="btn + operator" onclick="append('+')">+</button>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn 1" onclick="append('1')">1</button>
+                
+            </td>
+            <td>
+            <button class="btn 2" onclick="append('2')">2</button>
+
+            </td>
+            <td>
+                <button class="btn 3" onclick="append('3')">3</button>
+                
+            </td>
+            <td rowspan="2">
+                <button class="btn equals operator" onclick="calculate()">=</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button class="btn 0 ze" onclick="append('0')">0</button>
+
+            </td>
+            <td>
+                <button class="btn ." onclick="append('.')">.</button>
+
+            </td>
+        </tr>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>

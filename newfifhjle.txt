@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">0</div>
+      <button class="btn" onclick="clearDisplay()">C</button>
+      <button class="btn" onclick="backspace()">←</button>
+      <button class="btn operator" onclick="appendOperator('+')">+</button>
+      <button class="btn" onclick="appendNumber('7')">7</button>
+      <button class="btn" onclick="appendNumber('8')">8</button>
+      <button class="btn" onclick="appendNumber('9')">9</button>
+      <button class="btn operator" onclick="appendOperator('-')">-</button>
+      <button class="btn" onclick="appendNumber('4')">4</button>
+      <button class="btn" onclick="appendNumber('5')">5</button>
+      <button class="btn" onclick="appendNumber('6')">6</button>
+      <button class="btn operator" onclick="appendOperator('*')">*</button>
+      <button class="btn" onclick="appendNumber('1')">1</button>
+      <button class="btn" onclick="appendNumber('2')">2</button>
+      <button class="btn" onclick="appendNumber('3')">3</button>
+      <button class="btn operator" onclick="appendOperator('/')">/</button>
+      <button class="btn" onclick="appendNumber('0')">0</button>
+      <button class="btn" onclick="appendNumber('.')">.</button>
+      <button class="btn equals" onclick="calculate()">=</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+cssss
+.calculator {
+  width: 240px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+  padding: 10px;
+}
+
+.display {
+  height: 50px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background-color: #f2f2f2;
+  color: #333;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+.operator {
+  background-color: #333;
+  color: #fff;
+}
+
+.equals {
+  background-color: #333;
+  color: #fff;
+  margin-right: 0;
+}
+
+.clear {
+  background-color: #f44336;
+  color: #fff;
+}
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+i have the following code of calculator i want u to give me a simple css code for it. i wan t to mak the display and the result when there is an overflow don become bigger to fit it but make just a scroll :
+<div class="calculator">
+  <div class="display"></div>
+  <div class="result"></div>
+  <button class="btn" onclick="clearDisplay()">C</button>
+  <button class="btn" onclick="backspace()">←</button>
+  <button class="btn operator" onclick="appendOperator('+')">+</button>
+  <button class="btn" onclick="appendNumber('7')">7</button>
+  <button class="btn" onclick="appendNumber('8')">8</button>
+  <button class="btn" onclick="appendNumber('9')">9</button>
+  <button class="btn operator" onclick="appendOperator('-')">-</button>
+  <button class="btn" onclick="appendNumber('4')">4</button>
+  <button class="btn" onclick="appendNumber('5')">5</button>
+  <button class="btn" onclick="appendNumber('6')">6</button>
+  <button class="btn operator" onclick="appendOperator('*')">*</button>
+  <button class="btn" onclick="appendNumber('1')">1</button>
+  <button class="btn" onclick="appendNumber('2')">2</button>
+  <button class="btn" onclick="appendNumber('3')">3</button>
+  <button class="btn operator" onclick="appendOperator('/')">/</button>
+  <button class="btn" onclick="appendNumber('0')">0</button>
+  <button class="btn" onclick="appendNumber('.')">.</button>
+  <button class="btn equals" onclick="calculate()">=</button>
+</div>
